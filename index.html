@@ -1,32 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .box {
-      height: 200px;
-      width: 200px;
-      background-color: pink;
-      margin: 0 auto;
-      text-align: center;
-      line-height: 200px;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box_head {
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        background-color: blueviolet;
+      }
 
-    .box_body {
-      height: 200px;
-      width: 400px;
-      background-color: green;
-      margin: 0 auto;
-      text-align: center;
-      line-height: 200px;
-    }
-  </style>
-</head>
-<body>
-    <div class="box">My Test Demo</div>
-    <div class="box_body">Body</div>
-</body>
+      .box_head img {
+        width: 100%;
+        height: 100%;
+      }
+
+
+      .box_body {
+        overflow: hidden;
+        width: 800px;
+        height: 200px;
+        margin: 0 auto;
+      }
+      .body {
+        float: left;
+        height: 200px;
+        width: 400px;
+        background-color: green;
+        text-align: center;
+        line-height: 200px;
+      }
+
+      .left_hands,
+      .right_hands {
+        float: left;
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box_head">
+      <img src="./images/KeLi.jpg"></img>
+    </div>
+    <div class="box_body">
+      <div class="left_hands">left_hands</div>
+      <div class="body">Body</div>
+      <div class="right_hands">light_hands</div>
+    </div>
+  </body>
 </html>
